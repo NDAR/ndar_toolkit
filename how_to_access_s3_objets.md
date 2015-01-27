@@ -150,14 +150,14 @@ s3cmd --configure
 Add the security token, you should already see entries for access_key and secret_key from running the --configure option.  The configuration file should be in your home directory, and it is named .s3cf
 
 ```shell
-vim ~.s3cfg
+vim ~/.s3cfg
 access_token = AQoDYXdzEPX//////////wEaoAKf5O7+2FhbYIqed/oh69l6FuVuaxpanNbA2yCR/1iYB4cjqQ415FUhDVIN4E4fXF9j8FzV4cTE6vY0dLzOWcUq7dNLvFzJux3oh0bu4bqbZ9EwBAxKb4bNf1pSbUWjQ+Sgrnjz38Uf63jSpxWAUM66mFVOPJhyaHh5lnUREZMNJrwzrkoUn6SR4fTEjXBuQRh9n4idllP+GW7i5XncDqZz+LutYgYMSGjb3x2j1hO1jCyRQ0dtFltFtaq77onMrCnk8k5YCmWyEFgfECtmu0fFE5hpy2NDLg2cFz1aVGN0K2B9vkOPEhG1LIm5+TY8U3MhWQsBnGvGCe0dO/4EOSJfJDhZZe+LsUhVhLJJWnQPRUcqpfNRWU8VnTHxadPLEXAMPLE=
 ```
 
 You can copy the existing configuration file to create multiple config files 'or profiles' and use a specific config file when running s3cmd using the --config option.
 
 ```shell
-cp .s3cfg .s3cfg_ndar
+cp ~/.s3cfg ~/.s3cfg_ndar
 ```
 
 #### Use credentials profile to list and access s3 objects
