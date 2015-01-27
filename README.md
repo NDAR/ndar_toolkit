@@ -2,7 +2,10 @@ ndar_toolkit
 ============
 
 #Introduction
-Scripts to aid in automating integration with NDAR tools and data
+Scripts and Instructions to aid in automating integration with NDAR tools and data
+
+#Instructions
+##how_to_access_s3_objects.md
 
 #Available Scripts
 ## ndar_update_keys.py
