@@ -4,7 +4,7 @@ ndar_toolkit
 #Introduction
 Scripts and Instructions to aid in automating integration with NDAR tools and data
 
-#Instructions
+#Manual Instructions
 ##[how_to_access_s3_objects.md](https://github.com/NDAR/ndar_toolkit/blob/master/how_to_access_s3_objets.md)
 
 #Available Scripts
