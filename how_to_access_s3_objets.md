@@ -147,7 +147,7 @@ You can run the configuration for s3cmd and input your access and secret keys, y
 s3cmd --configure
 ```
 
-Add the security token, you should already see entries for access_key and secret_key from running the --configure option.  The configuration file should be in your home directory, and it is named .s3cf
+Add the security token, you should already see entries for access_key and secret_key from running the --configure option.  The configuration file should be in your home directory, and it is named .s3cfg.
 
 ```shell
 vim ~/.s3cfg
