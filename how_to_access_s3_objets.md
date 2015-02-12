@@ -180,7 +180,10 @@ s3cmd --config ~/.s3cfg_ndar get s3://NDAR_Central/submission_9944/AU-9201_3.vcf
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
 ```
 
+#### Bypass the config entirely and pass the credentials as arguments when calling s3cmd
 
-
+```shell
+s3cmd get s3://NDAR_Central/submission_9944/AU-9201_3.vcf --access_key=ASIAJ3GPA2W73EXAMPLE --secret_key=0i8oIpzWbbVDaybWxmK2vsZsiaSPSdeXEXAMPLE --add-header=x-amz-security-token:AQoDYXdzEPX//////////wEaoAKf5O7+2FhbYIqed/oh69l6FuVuaxpanNbA2yCR/1iYB4cjqQ415FUhDVIN4E4fXF9j8FzV4cTE6vY0dLzOWcUq7dNLvFzJux3oh0bu4bqbZ9EwBAxKb4bNf1pSbUWjQ+Sgrnjz38Uf63jSpxWAUM66mFVOPJhyaHh5lnUREZMNJrwzrkoUn6SR4fTEjXBuQRh9n4idllP+GW7i5XncDqZz+LutYgYMSGjb3x2j1hO1jCyRQ0dtFltFtaq77onMrCnk8k5YCmWyEFgfECtmu0fFE5hpy2NDLg2cFz1aVGN0K2B9vkOPEhG1LIm5+TY8U3MhWQsBnGvGCe0dO/4EOSJfJDhZZe+LsUhVhLJJWnQPRUcqpfNRWU8VnTHxadPLEXAMPLE=
+```
 
 
