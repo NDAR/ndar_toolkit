@@ -47,9 +47,9 @@ expirationDate=Tue Nov 18 03:14:16 EST 2014
 
 ## Use the Amazon keys to configure your choice of tool to access files in s3
 
-###[AWS Command Line (aws-cli)](aws-cli)
+###[AWS Command Line (aws-cli)](#aws-cli)
 
-###[s3tools s3cmd](s3cmd)
+###[s3tools s3cmd](#s3cmd)
 ***
 
 ### aws-cli
