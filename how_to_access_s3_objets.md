@@ -52,7 +52,7 @@ expirationDate=Tue Nov 18 03:14:16 EST 2014
 ###[s3tools s3cmd](s3cmd)
 ***
 
-### <a name="aws-cli"/>aws-cli
+### aws-cli
 <a id=aws-cli></a>
 This tool comes pre-packaged with Amazon Linux AMIs
 #### Getting Set up
