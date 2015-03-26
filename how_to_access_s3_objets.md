@@ -55,11 +55,11 @@ expirationDate=Tue Nov 18 03:14:16 EST 2014
 #### aws-cli
 <a id=aws-cli></a>
 This tool comes pre-packaged with Amazon Linux AMIs
-##### Getting Set up
+###### Getting Set up
 <http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html>
-##### Installation
+###### Installation
 <http://docs.aws.amazon.com/cli/latest/userguide/installing.html>
-##### Configuration
+###### Configuration
 <http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html>
 
 You should be able to find the credentials file located in your home directory
@@ -94,7 +94,7 @@ aws_session_token=AQoDYXdzEPX//////////wEaoAKf5O7+2FhbYIqed/oh69l6FuVuaxpanNbA2y
 region=us-east-1
 ```
 
-##### Use credentials profile to list and access s3 objects
+###### Use credentials profile to list and access s3 objects
 Listing a bucket
 
 ```shell
@@ -114,7 +114,7 @@ aws --profile NDAR s3 cp s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 #### <a name="s3cmd"/>s3cmd
 <a id='s3cmd'></a>
 This tool can be downloaded from github. Note that versions newer than *1.5.0-rc1* are failing.  *Please use v1.5.0-rc1 or older*.
-##### Getting Set up
+###### Getting Set up
 download s3cmd
 
 ```shell
@@ -133,14 +133,14 @@ Unzip
 unzip v1.5.0-rc1.zip
 ```
 
-##### Installation
+###### Installation
 
 ```shell
 cd s3cmd-1.5.0-rc1
 python setup.py install
 ```
 
-##### Configuration
+###### Configuration
 You can run the configuration for s3cmd and input your access and secret keys, you will have to manually edit the s3cfg file to add the security token.
 
 ```shell
@@ -162,7 +162,7 @@ You can copy the existing configuration file to create multiple config files 'or
 cp ~/.s3cfg ~/.s3cfg_ndar
 ```
 
-##### Use credentials profile to list and access s3 objects
+###### Use credentials profile to list and access s3 objects
 Listing a bucket
 
 ```shell
@@ -180,7 +180,7 @@ s3cmd --config ~/.s3cfg_ndar get s3://NDAR_Central/submission_9944/AU-9201_3.vcf
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
 ```
 
-##### Bypass the config entirely and pass the credentials as arguments when calling s3cmd
+###### Bypass the config entirely and pass the credentials as arguments when calling s3cmd
 
 *See above comment about using v1.5.0-rc1 or older, newer versions of the tool do not work with this example*
 
