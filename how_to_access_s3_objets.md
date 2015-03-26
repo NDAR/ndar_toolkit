@@ -52,7 +52,7 @@ expirationDate=Tue Nov 18 03:14:16 EST 2014
 ###[s3tools s3cmd](s3cmd)
 ***
 
-### aws-cli
+### <a name="aws-cli"/>aws-cli
 <a id=aws-cli></a>
 This tool comes pre-packaged with Amazon Linux AMIs
 #### Getting Set up
@@ -111,7 +111,7 @@ aws --profile NDAR s3 cp s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
 ```
 
-### s3cmd
+### <a name="s3cmd"/>s3cmd
 <a id='s3cmd'></a>
 This tool can be downloaded from github. Note that versions newer than *1.5.0-rc1* are failing.  *Please use v1.5.0-rc1 or older*.
 #### Getting Set up
