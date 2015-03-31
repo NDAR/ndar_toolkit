@@ -98,14 +98,14 @@ region=us-east-1
 Listing a bucket
 
 ```shell
-aws --profile NDAR ls s3://NDAR_Central/
+aws --profile NDAR s3 ls s3://NDAR_Central/
 ```
 Accessing an object
 
 ```shell
-aws --profile NDAR ls s3://NDAR_Central/
+aws --profile NDAR s3 ls s3://NDAR_Central/
 #List a submission folder
-aws --profile NDAR ls s3://NDAR_Central/submission_9944/
+aws --profile NDAR s3 ls s3://NDAR_Central/submission_9944/
 #Stream a VCF file to stdout
 aws --profile NDAR s3 cp s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
