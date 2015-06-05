@@ -113,7 +113,7 @@ aws --profile NDAR s3 cp s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 
 #### <a name="s3cmd"/>s3cmd
 <a id='s3cmd'></a>
-This tool can be downloaded from github. Note that versions newer than *1.5.0-rc1* are failing.  *Please use v1.5.0-rc1 or older*.
+This tool can be downloaded from github. Note that versions *1.5.0, 1.5.1, and 1.5.1.2* are failing.  *Please use v1.5.0-rc1 or older, or use the latest master 1.5.2*.
 ###### Getting Set up
 download s3cmd
 
