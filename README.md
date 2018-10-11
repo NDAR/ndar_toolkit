@@ -36,16 +36,4 @@ python setup.py install
   ```
 
  
-Now you can use s3cmd:
-
-1. On Linx/Unix
-
-```shell
-s3cmd --config ~/ndar_toolkit/.s3cfg ls s3://NDAR_Central/
-```
-
-2. On Windows
-
-```shell
-python %HOME%/ndar_toolkit/s3cmd-master/s3cmd --config %HOME%/ndar_toolkit/.s3cfg ls s3://NDAR_Central/
-```
+Now you can use s3cmd.
