@@ -94,18 +94,15 @@ aws_session_token=AQoDYXdzEPX//////////wEaoAKf5O7+2FhbYIqed/oh69l6FuVuaxpanNbA2y
 region=us-east-1
 ```
 
-###### Use credentials profile to list and access s3 objects
-Listing a bucket
+###### Use credentials profile to view metadata and access s3 objects
+Viewing metadata
 
 ```shell
-aws --profile NDAR s3 ls s3://NDAR_Central/
+aws s3api head-object --bucket my-bucket --key index.html --profile NDAR s3
 ```
 Accessing an object
 
 ```shell
-aws --profile NDAR s3 ls s3://NDAR_Central/
-#List a submission folder
-aws --profile NDAR s3 ls s3://NDAR_Central/submission_9944/
 #Stream a VCF file to stdout
 aws --profile NDAR s3 cp s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
@@ -162,19 +159,11 @@ You can copy the existing configuration file to create multiple config files 'or
 cp ~/.s3cfg ~/.s3cfg_ndar
 ```
 
-###### Use credentials profile to list and access s3 objects
-Listing a bucket
-
-```shell
-s3cmd --config ~/.s3cfg_ndar ls s3://NDAR_Central/
-```
+###### Use credentials profile to access s3 objects
 
 Accessing an object
 
 ```shell
-s3cmd --config ~/.s3cfg_ndar ls s3://NDAR_Central/
-#List a submission folder
-s3cmd --config ~/.s3cfg_ndar ls s3://NDAR_Central/submission_9944/
 #Stream a VCF file to stdout
 s3cmd --config ~/.s3cfg_ndar get s3://NDAR_Central/submission_9944/AU-9201_3.vcf -
 #If you do not specify an output file (including stdout) the s3object will be copied to a file with the same name.
