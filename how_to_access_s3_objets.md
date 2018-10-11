@@ -98,7 +98,7 @@ region=us-east-1
 Viewing metadata
 
 ```shell
-aws s3api head-object --bucket my-bucket --key index.html --profile NDAR s3
+aws s3api head-object --bucket my-bucket --key index.html --profile NDAR
 ```
 Accessing an object
 
